@@ -23,12 +23,12 @@ a.linkButton {display:block; border: 2px solid black; background-color:black; wi
                 text-decoration: none; margin: 0 auto; margin-top:10px}
 a.linkbutton:hover {border: 2px solid black; background-color:white; color:black}
 p.centerBlurb {width: 75%; text-align:center; margin: 0 auto;}
-div.fullRow {position:relative; padding-left:5%;}
-span.picSide {width: 50%; height:60%; display:inline-block; margin: 0 auto; vertical-align:middle; position:relative;}
-div.picBox {vertical-align: middle; position: absolute; width:100%}
+div.fullRow {position:relative; padding-left:5%; height:300px;}
+span.picSide {width: 45%; height:300px; display:inline-block; margin: 0 auto; vertical-align:middle; position:relative;}
+div.picBox {vertical-align: middle; position: absolute; height:300px}
 /* TODO Figure out how to make this vertical center */
-span.desSide {width: 40%; height: 60%; display:inline-block; margin: 0 auto; vertical-align: top; top:10%; position:relative;}
-div.textBox {vertical-align: middle; position: absolute; top: 25%}
+span.desSide {width: 50%; height:300px; display:inline-block; margin: 0 auto; vertical-align: top; position:relative;}
+div.textBox {vertical-align: middle; position: absolute; height:300px; width:500px}
 div.footer {display: inline-block; position:relative; width: 100%; border:2px solid #000000; margin-top:2%}
 div.footerLink {display: inline-block; font-family: 'Bitcount Single'; font-size: medium; text-align: right;}
 .hamburger-icon {display:none}
