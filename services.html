@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <title>Soundcheck</title>
+        <!-- Google Font for Soundcheck -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+        <!-- Google Font for Text Blurbs -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="bandcheck.css">
+        <style type="text/css">
+            div.picHead {width: 100%; height:50%; display: inline-block; position:relative;
+                            background-image:url(servicesphoto.jpg); background-size:cover;}
+            span.serviceDes {display:inline-block; width:60%; height:50%; position:relative;}
+            span.servicePic {display:inline-block; width:40%; top:10; position:absolute;}
+            div.serviceText {position: absolute; height:100%; width:100%; vertical-align: middle;}
+            tr:nth-child(even) {background-color: #dddddd39;}
+
+            @media (max-width: 1000px) {
+                div.fullRow {height:50%}
+                span.servicePic {display: none}
+                span.serviceDes {width:100%}
+            }
+        </style>
+        <script>
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="bandlogo">
+                <a href="index.html" class="homeButton">SOUNDCHECK</a>
+            </div>
+            <!-- TODO: Fix the spacing here -->
+            <div class="midHeader">
+                &nbsp;
+            </div>
+            <ul class="navBar">
+                <li><a href="songs.html">Songs</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="mobileMenu">
+            <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="mobileNav navBar">
+                <li><a href="songs.html">Songs</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="picHead">
+            <!-- TODO: This image is too big, you need to compress it down-->
+            <!-- <img src="bandhome.jpg" width="100%"> -->
+            <h1>
+                SERVICES
+            </h1>
+        </div>
+        <div>
+            <div class="fullRow">
+                <span class="serviceDes">
+                    <div class="serviceText">
+                    <h2>Soundcheck / Dress Rehearsals</h2>
+                    <ul>
+                        <li>A full day booking with at least one full rundown of the set list</li>
+                        <li>A separate practice session included before actual soundcheck and dress rehearsal</li>
+                        <li>Working with sound teams ahead of time</li>
+                        <li>Can coordinate with other artists</li>
+                        <li>Can travel ahead of the touring band to work with venues</li>
+                        <li>Bulk bookings are available with a discounted rate</li>
+                    </ul>
+                    </div>
+                </span>
+                <span class="servicePic">
+                    <div>
+                    <img src="bookingsphoto.jpg" width="100%">
+                    </div>
+                </span>
+            </div><br/>
+            <div class="fullRow">
+                <span class="serviceDes">
+                    <div class="serviceText">
+                    <h2>Private Functions</h2>
+                    <ul>
+                        <li>Can be booked a few hours or the full day</li>
+                        <li>A complementary full rundown of the set list prior to the event</li>
+                        <li>Two practice sessions included to try out songs</li>
+                        <li>Planning events to engage guests</li>
+                        <li>Set list can be customized to fit theme of event</li>
+                    </ul>
+                    </div>
+                </span>
+                <span class="servicePic">
+                    <div>
+                    <img src="faqsphoto.jpg" width="100%">
+                    </div>
+                </span>
+            </div>
+            <h2>
+                Estimated Costs
+            </h2>
+            <p class="centerBlurb">Please contact us for exact figures.</p>
+            <div>
+            <table style="margin:0 auto">
+                <tr>
+                    <th width="80%">Service Tendered</th>
+                    <th>Estimated Cost (USD)</th>
+                </tr>
+                <tr>
+                    <td>Consultation</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td>1 Hour Event Base Booking</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>2 Hour Event Base Booking</td>
+                    <td>$2000</td>
+                </tr>
+                <tr>
+                    <td>Full Day (8 Hours) Base Booking</td>
+                    <td>$5000</td>
+                </tr>
+                <tr>
+                    <td>Practice Session (4hr)</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td>US Overnight Stay per Night (Include Travel Fares)</td>
+                    <td>$2000</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <div class="footer">
+            <!-- TODO: Figure out how to space this out properly-->
+            <div class="bandlogo">
+                <a href="index.html" class="homeButton">SOUNDCHECK</a>
+            </div>
+            <div style="width:50%; display:inline-block">
+                &nbsp;
+            </div>
+            <ul class="navBar">
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

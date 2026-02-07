@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>Soundcheck</title>
+        <!-- Google Font for Soundcheck -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+        <!-- Google Font for Text Blurbs -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="bandcheck.css">
+        <style type="text/css">
+            div.picHead {width: 100%; height:50%; display: inline-block; position:relative;
+                            background-image:url(contactphoto.jpg); background-size:cover;
+                        }
+            div.formDiv{position:relative; width:50%; margin:0 auto;}
+            span.leftCol {display:inline-block; width: 30%; text-align:right; vertical-align: top;}
+            span.rightCol {display:inline-block; width: 60%;}
+
+            @media (max-width: 1000px) {
+                div.contactblurb {min-width: 550px}
+                div.formDiv {min-width:500px}
+                span.rightCol input {min-width:300px}
+                textarea {min-width:300px}
+            }
+        </style>
+        <script>
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="bandlogo">
+                <a href="index.html" class="homeButton">SOUNDCHECK</a>
+            </div>
+            <!-- TODO: Fix the spacing here -->
+            <div class="midHeader">
+                &nbsp;
+            </div>
+            <ul class="navBar">
+                <li><a href="songs.html">Songs</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="mobileMenu">
+            <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="mobileNav navBar">
+                <li><a href="songs.html">Songs</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="picHead">
+            <!-- TODO: This image is too big, you need to compress it down-->
+            <!-- <img src="bandhome.jpg" width="100%"> -->
+            <h1>
+                CONTACT US
+            </h1>
+        </div>
+        <div class="contactBlurb">
+            <h2>Contact Form</h2>
+            <p class="centerBlurb">
+                Please fill out the form below if you are inquiring about bookings
+                or have any questions for us.
+                <br/>
+                We will do our best to respond within 3 business days.
+            </p>
+            <br/>
+            <!-- Contact Form -->
+            <div style="display:inline-block; width:100%; position:relative">
+            <div class="formDiv">
+                <form name="contactForm">
+                    <span class="leftCol"><label>Name</label></span><span class="rightCol"><input type="text" name="name" style="width:100%"></span><br/>
+                    <span class="leftCol"><label>Email</label></span><span class="rightCol"><input type="email" name="email" style="width:100%"></span><br/>
+                    <!-- TODO: Add a service type (soundcheck, private function, etc.) -->
+                    <span class="leftCol"><label>Inquiry Type</label></span>
+                    <span class="rightCol">
+                        <select name="inquiry">
+                            <option>Booking Rehearsal</option>
+                            <option>Booking Private Function</option>
+                            <option>Questions and Comments</option>
+                        </select>
+                    </span>
+                    <span class="leftCol"><label>Your Message</label></span>
+                    <span class="rightCol">
+                    <textarea rows="10" style="width:100%">Your Response</textarea>
+                    </span><br/>
+                    <span class="leftCol"></span>
+                    <span class="rightCol"><button>Submit</button></span>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="footer">
+            <!-- TODO: Figure out how to space this out properly-->
+            <div class="bandlogo">
+                <a href="index.html" class="homeButton">SOUNDCHECK</a>
+            </div>
+            <div style="width:50%; display:inline-block">
+                &nbsp;
+            </div>
+            <ul class="navBar">
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

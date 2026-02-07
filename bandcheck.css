@@ -1,0 +1,46 @@
+body {font-family: 'Rubik'}
+div.header {display:inline-block; width:100%; position: relative; min-height: 50px}
+div.midHeader {width:40%; display:inline-block}
+div.bandlogo {display:inline-block; font-family: 'Bitcount Single', sans-serif; font-size: 50px; padding-left: 2%; width:20%}
+ul.navBar {display:inline-block; position:absolute; right: 20px; vertical-align: middle; font-family: 'Bitcount Single', sans-serif; font-size: larger;}
+ul.navBar li {display:inline-block; text-decoration: none;}
+.mobileMenu {width:120px}
+.mobileNav {width:120px; background-color: white;}
+ul.navBar li>a {text-decoration: none; color:black;}
+ul.navBar li:hover {background-color: black;}
+ul.navBar li>a:hover {text-decoration: none; color:white;}
+div.bandhome {width: 100%; height:100%; display: inline-block; position:relative;
+                background-image:url(bandhome.jpg); background-size:cover;}
+a.homeButton {text-decoration: none; color:black}
+/* This is not properly centered in the picture*/
+h1 {font-family: 'Bitcount Single'; color:white; text-align: center;
+    font-size: 40px; z-index: 10; position: absolute; top: 40%; 
+    display:inline-block; width: 100%; margin: 0 auto}
+h2 {font-family: 'Bitcount Single'; text-align: center}
+p {font-family: 'Rubik';}
+a.linkButton {display:block; border: 2px solid black; background-color:black; width:200px;
+                font-family: 'Bitcount Single'; font-size: xx-large; text-align: center; color:white;
+                text-decoration: none; margin: 0 auto; margin-top:10px}
+a.linkbutton:hover {border: 2px solid black; background-color:white; color:black}
+p.centerBlurb {width: 75%; text-align:center; margin: 0 auto;}
+div.fullRow {position:relative; padding-left:5%}
+span.picSide {width: 50%; height:60%; display:inline-block; margin: 0 auto; vertical-align:middle; position:relative;}
+div.picBox {vertical-align: middle; position: absolute; width:100%}
+/* TODO Figure out how to make this vertical center */
+span.desSide {width: 40%; height: 60%; display:inline-block; margin: 0 auto; vertical-align: top; top:10%; position:relative;}
+div.textBox {vertical-align: middle; position: absolute; top: 25%}
+div.footer {display: inline-block; position:relative; width: 100%; border:2px solid #000000; margin-top:2%}
+div.footerLink {display: inline-block; font-family: 'Bitcount Single'; font-size: medium; text-align: right;}
+.mobileMenu {display:none; width:30px; height:30px}
+.hamburger-icon {display:none}
+.hamburger-icon span {height: 4px; width: 25px; background-color: black; display:block; margin-bottom: 3px}
+@media (max-width: 1000px) {
+    .mobileMenu {display:block; position:absolute; right: 30px; top:20px;}
+    div.header ul.navbar {display:none}
+    .hamburger-icon {display:inline-block}
+    .mobileMenu:hover .mobileNav {display:block; z-index:10}
+    .mobileNav {position:absolute; top:0px; right:10px;}
+    .mobileNav ul {padding: 15px 0;}
+    .mobileNav ul li {display:block; margin:0; padding: 0 0 0 20px;}
+    .mobileNav ul li a {display:block;}
+}
