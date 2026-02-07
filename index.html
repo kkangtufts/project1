@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="bandcheck.css">
     <style type="text/css">
         div.mobilePic {display:none}
-        @media (max-width: 1100px) {
-            div.fullRow {width:100%;position:relative; display:block; margin:0; padding:0}
-            span.picSide {display:none}
-            span.desSide {width:100%; position:relative; display:block; margin:0}
+        div.mobileText {display:none}
+        /**/
+        @media (max-width: 1000px) {
+            div.bandhome {height: 75%}
+            div.fullRow {display: none}
             div.textbox {min-width:500px; margin:0}
-            div.mobilePic {display:block; width:100%}
+            div.mobilePic {display:inline-block; width:100%; margin-top:20px}
+            div.mobileText {display:inline-block; width:100%;}
         }
     </style>
     </head>
@@ -75,6 +77,17 @@
         <div class="mobilePic">
             <img src="genreband.jpg" width="100%">
         </div>
+        <div class="mobileText">
+            <h2>Covering All Kinds of Genres</h2>
+            <p class="centerBlurb">
+                We pride ourselves in being versatile in playing different kinds of genres
+                (from classical, rock, jazz, hip-hop, country, and more) and various
+                instruments (piano, violin, guitar, drums, saxophone, etc.). From playing a
+                4-piece band to accompanying orchestras, we will adapt to whatever genre
+                you want us to play.
+            </p>
+            <a href="songs.html" class="linkButton">LEARN MORE</a>
+        </div>
         <div class="fullRow">
             <span class="picSide">
                 <div class="picBox">
@@ -98,6 +111,16 @@
         <br/>
         <div class="mobilePic">
             <img src="maineventband.jpg" width="100%">
+        </div>
+        <div class="mobileText">
+            <h2>We Can Be the Main Event Too!</h2>
+            <p class="centerBlurb">
+                We offer competitive rates for private functions such as weddings, dances,
+                or anything that needs some amazing music. Do not resign yourself to hiring
+                a DJ or letting a Spotify playlist loop continuously in the background. Our
+                live performances will help make your event memorable for your attendees!
+            </p>
+            <a href="services.html" class="linkButton">LEARN MORE</a>
         </div>
         <div class="fullRow">
             <span class="desSide">

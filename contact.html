@@ -21,8 +21,11 @@
             @media (max-width: 1000px) {
                 div.contactblurb {min-width: 550px}
                 div.formDiv {min-width:500px}
-                span.rightCol input {min-width:300px}
-                textarea {min-width:300px}
+                label {font-size:30px}
+                span.leftCol {width:30%}
+                span.rightCol input {width:70%; font-size:30px}
+                select {font-size:30px; width: 100%}
+                textarea {font-size:30px; width:70%}
             }
         </style>
         <script>
@@ -91,7 +94,7 @@
                     <textarea rows="10" style="width:100%">Your Response</textarea>
                     </span><br/>
                     <span class="leftCol"></span>
-                    <span class="rightCol"><button>Submit</button></span>
+                    <span class="rightCol"><input type="submit" action="#" method="GET" value="Submit"></span>
                 </form>
             </div>
             </div>

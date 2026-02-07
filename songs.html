@@ -13,14 +13,15 @@
         <style type="text/css">
             div.picHead {width: 100%; height:50%; display: inline-block; position:relative;
                             background-image:url(songphoto.jpg); background-size:cover;}
-            div.listDiv {display:inline-block; position:absolute; margin-left:25%; width:50%; height:100%;}
+            div.listDiv {display:inline-block; position:relative; margin-left:35%; width:50%;}
             div.songblurb {display:inline-block; position:relative;}
             ul.songList {display:inline; margin:0 auto; margin-bottom: 15px;}
-            ul.songList li {text-decoration: none; font-size:large}
+            ul.songList li {text-decoration: none;}
 
-            @media (max-width: 900px) {
+            /* ! Not sure why it doesn't like 900px but likes 1000px*/
+            @media (max-width: 1000px) {
                 div.songblurb {min-width: 500px}
-                div.listDiv {min-width: 500px; margin-left:15%}
+                div.listDiv {display:inline-block; position:relative; width:90%; margin-left:5%;}
             }
         </style>
         <script>
@@ -87,7 +88,7 @@
                 <a href="https://open.spotify.com/playlist/5i73sZlnc43RHOkG2Kfi4i?si=2ae4c499643a416a">Spotify Playlist</a>
             </p>
         </div>
-        <div style="display:inline-block; position:relative; min-height:725px; width:100%;">
+        <div style="display:inline-block; position:relative; width:100%;">
         <div class="listDiv">
             <ul class="songList">
                 <li>1969: Neil Diamond - Sweet Caroline</li>
