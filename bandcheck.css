@@ -6,9 +6,9 @@ div.midHeader {width:40%; display:inline-block}
 div.bandlogo {display:inline-block; font-family: 'Bitcount Single', sans-serif; font-size: 50px; padding-left: 2%; width:20%}
 ul.navBar {display:inline-block; position:absolute; right: 20px; vertical-align: middle; font-family: 'Bitcount Single', sans-serif; font-size: larger;}
 ul.navBar li {display:inline-block; text-decoration: none;}
-.mobileMenu {display:none; width:25px; height:100px}
-.mobileNav {width:300px; background-color: white;}
-ul.navBar li>a {text-decoration: none; color:black;}
+.mobileMenu {display:none; width:40px; height:40px}
+.mobileNav {width:120px; background-color: white;}
+ul.navBar li>a {text-decoration: none; color:black; text-align: left}
 ul.navBar li:hover {background-color: black;}
 ul.navBar li>a:hover {text-decoration: none; color:white;}
 div.bandhome {width: 100%; height:100%; display: inline-block; position:relative;
@@ -38,8 +38,8 @@ div.rightDesSide {right: 5%}
 div.textBox {position: absolute; height:300px; width:500px; display:inline-block;}
 div.footer {display: inline-block; position:relative; width: 100%; border:2px solid #000000; margin-top:2%}
 div.footerLink {display: inline-block; font-family: 'Bitcount Single'; font-size: medium; text-align: right;}
-.hamburger-icon {display:none}
-.hamburger-icon span {height: 8px; width: 100px; background-color: black; display:block; margin-bottom: 15px}
+.hamburger-icon {display:none; height:auto}
+.hamburger-icon span {height: 2px; width:30px; background-color: black; display:block; margin-bottom: 5px}
 div.mobilePic {display:none}
 div.mobileText {display:none}
 @media (max-width: 1150px) {
@@ -54,10 +54,10 @@ div.mobileText {display:none}
 }
 
 @media (max-width: 1000px) {
-    .mobileMenu {display:block; position:absolute; right: 100px; top:20px;}
+    .mobileMenu {display:block; position:absolute; right: 0px; top:20px;}
     /* * Make the header bigger */
-    div.header {min-height: 100px}
-    div.bandlogo {font-size:75px}
+    div.header {min-height: 50px}
+    div.bandlogo {font-size:40px}
     div.header ul.navbar {display:none}
     div.fullRow {display: none}
     .hamburger-icon {display:inline-block}
@@ -67,14 +67,16 @@ div.mobileText {display:none}
     .mobileNav ul {padding: 15px 0;}
     .mobileNav ul li {display:block; margin:0; padding: 0 0 0 10px;}
     .mobileNav ul li a {display:block;}
-    /* * Make the text bigger */
-    ul.navBar li>a {font-size: 50px}
+    /* * Adjust the text */
+    h1 {font-size:x-large}
+    h2 {font-size:large}
+    /* ul.navBar li>a {font-size: 50px}
     h1 {font-size:65px}
-    h2 {font-size:50px}
     p {font-size:30px}
     ul li {font-size:30px}
-    a.linkbutton {font-size:50px; width:350px}
+    a.linkbutton {font-size:50px; width:350px} */
     /* * For the text boxes in index and services */
     div.mobilePic {display:inline-block; width:100%}
     div.mobileText {display:inline-block; width:100%;}
+    div.footer {margin-top: 5%}
 }
