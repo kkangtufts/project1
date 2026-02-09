@@ -1,4 +1,6 @@
 body {font-family: 'Rubik'}
+/* This is needed for debug purposes to determine boundaries */
+/* div {border:2px solid #3e8ede;} */
 div.header {display:inline-block; width:100%; position: relative; min-height: 50px}
 div.midHeader {width:40%; display:inline-block}
 div.bandlogo {display:inline-block; font-family: 'Bitcount Single', sans-serif; font-size: 50px; padding-left: 2%; width:20%}
@@ -23,18 +25,34 @@ a.linkButton {display:block; border: 2px solid black; background-color:black; wi
                 text-decoration: none; margin: 0 auto; margin-top:10px}
 a.linkbutton:hover {border: 2px solid black; background-color:white; color:black}
 p.centerBlurb {width: 75%; text-align:center; margin: 0 auto;}
-div.fullRow {position:relative; padding-left:5%; height:300px;}
-span.picSide {width: 45%; height:300px; display:inline-block; margin: 0 auto; vertical-align:middle; position:relative;}
-div.picBox {vertical-align: middle; position: absolute; height:300px}
+div.fullRow {position:relative; height:300px; width:100%;}
+div.innerRow {position: relative; margin: 0 auto}
+div.picSide {width: 500px; height:300px; display:inline-block; position: absolute;}
+div.picBox {height:300px}
+div.leftPicSide {left: 5%}
+div.rightPicSide {right: 5%}
 /* TODO Figure out how to make this vertical center */
-span.desSide {width: 50%; height:300px; display:inline-block; margin: 0 auto; vertical-align: top; position:relative;}
-div.textBox {vertical-align: middle; position: absolute; height:300px; width:500px}
+div.desSide {width: 500px; height:300px; display:inline-block; position:absolute}
+div.leftDesSide {left: 5%}
+div.rightDesSide {right: 5%}
+div.textBox {position: absolute; height:300px; width:500px; display:inline-block;}
 div.footer {display: inline-block; position:relative; width: 100%; border:2px solid #000000; margin-top:2%}
 div.footerLink {display: inline-block; font-family: 'Bitcount Single'; font-size: medium; text-align: right;}
 .hamburger-icon {display:none}
 .hamburger-icon span {height: 8px; width: 100px; background-color: black; display:block; margin-bottom: 15px}
 div.mobilePic {display:none}
 div.mobileText {display:none}
+@media (max-width: 1150px) {
+    div.desSide {width:400px}
+    div.picSide {width:400px}
+    div.textBox {width:400px}
+    div.leftPicBox {left: 1%}
+    div.rightPicBox {right: 1%}
+    div.leftDesBox {left: 1%}
+    div.rightDesBox {right: 1%}
+    div.picBox>img {width:450px; height:275px;}
+}
+
 @media (max-width: 1000px) {
     .mobileMenu {display:block; position:absolute; right: 100px; top:20px;}
     /* * Make the header bigger */
