@@ -15,14 +15,13 @@
         <style type="text/css">
             div.picHead {width: 100%; height:50%; display: inline-block; position:relative;
                             background-image:url(songphoto.jpg); background-size:cover;}
-            div.listDiv {display:inline-block; position:relative; margin-left:35%; width:50%;}
+            div.listDiv {display:block; position:relative; margin:0 auto; width:500px}
             div.songblurb {display:inline-block; position:relative;}
             ul.songList {display:inline; margin:0 auto; margin-bottom: 15px;}
             ul.songList li {text-decoration: none;}
 
-            /* ! Not sure why it doesn't like 900px but likes 1000px*/
-            @media (max-width: 1000px) {
-                div.listDiv {display:inline-block; position:relative; width:90%; margin-left:5%;}
+            @media (max-width: 500px) {
+                div.listDiv {width:400px}
             }
         </style>
         <script>
@@ -33,7 +32,6 @@
             <div class="bandlogo">
                 <a href="index.html" class="homeButton">SOUNDCHECK</a>
             </div>
-            <!-- TODO: Fix the spacing here -->
             <div class="midHeader">
                 &nbsp;
             </div>
@@ -55,9 +53,8 @@
             </ul>
             </div>
         </div>
+        <!-- End of Header -->
         <div class="picHead">
-            <!-- TODO: This image is too big, you need to compress it down-->
-            <!-- <img src="bandhome.jpg" width="100%"> -->
             <h1>
                 SONGS
             </h1>
@@ -86,7 +83,7 @@
             <h2>Example Songs We Can Play</h2>
 
             <p class="centerBlurb">
-                <a href="https://open.spotify.com/playlist/5i73sZlnc43RHOkG2Kfi4i?si=2ae4c499643a416a" class="linkButton">LISTEN NOW</a>
+                <a href="https://open.spotify.com/playlist/5i73sZlnc43RHOkG2Kfi4i?si=2ae4c499643a416a" class="linkButton" target="_blank">LISTEN NOW</a>
             </p>
         </div>
         <div style="display:inline-block; position:relative; width:100%;">
@@ -135,7 +132,6 @@
         </div>
         </div> <!-- End of the song list -->
         <div class="footer">
-            <!-- TODO: Figure out how to space this out properly-->
             <div class="bandlogo">
                 <a href="index.html" class="homeButton">SOUNDCHECK</a>
             </div>
