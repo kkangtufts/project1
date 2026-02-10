@@ -1,32 +1,53 @@
-body {font-family: 'Rubik';}
-/* This is needed for debug purposes to determine boundaries */
-/* div {border:2px solid #3e8ede;} */
+/* * ALL PAGES */
+
+/* Headers and Footers */
 div.header {display:inline-block; width:100%; position: relative; min-height: 50px}
 div.midHeader {width:40%; display:inline-block}
-div.bandlogo {display:inline-block; font-family: 'Bitcount Single', sans-serif; font-size: 50px; padding-left: 2%; width:20%}
+div.bandlogo {display:inline-block; font-family: 'Bitcount Single', sans-serif;
+                font-size: 50px; padding-left: 2%; width:20%}
 ul.navBar {display:inline-block; position:absolute; right: 20px; vertical-align: middle;
             font-family: 'Bitcount Single', sans-serif; font-size: larger;
             padding-left:10px}
 ul.navBar li {display:inline-block; text-decoration: none;}
-.mobileMenu {display:none; width:40px; height:40px}
-.mobileNav {width:120px; background-color: white;}
 ul.navBar li>a {text-decoration: none; color:black; text-align: left;}
 ul.navBar li:hover {background-color: black;}
 ul.navBar li>a:hover {text-decoration: none; color:white;}
-div.bandhome {width: 100%; height:100%; display: inline-block; position:relative;
-                background-image:url(bandhome.jpg); background-size:cover;}
 a.homeButton {text-decoration: none; color:black}
-/* This is not properly centered in the picture*/
+div.footer {display: inline-block; position:relative; width: 100%;
+            border:2px solid #000000; margin-top:2%}
+div.footerLink {display: inline-block; font-family: 'Bitcount Single'; font-size: medium;
+                text-align: right;}
+
+/* Mobile Menu */
+.hamburger-icon {display:none; height:auto}
+.hamburger-icon span {height: 2px; width:30px; background-color: black; display:block;
+                        margin-bottom: 5px}
+div.mobilePic {display:none}
+div.mobileText {display:none}
+.mobileMenu {display:none; width:40px; height:40px}
+.mobileNav {width:120px; background-color: white;}
+
+/* Debug Borders */
+/* This is needed for debug purposes to determine boundaries */
+/* div {border:2px solid #3e8ede;} */
+
+/* Fonts */
+body {font-family: 'Rubik';}
 h1 {font-family: 'Bitcount Single'; color:white; text-align: center;
     font-size: 40px; z-index: 10; position: absolute; top: 40%; 
     display:inline-block; width: 100%; margin: 0 auto}
 h2 {font-family: 'Bitcount Single'; text-align: center}
 p {font-family: 'Rubik';}
-a.linkButton {display:block; border: 2px solid black; background-color:black; width:200px;
-                font-family: 'Bitcount Single'; font-size: xx-large; text-align: center; color:white;
-                text-decoration: none; margin: 0 auto; margin-top:10px}
-a.linkbutton:hover {border: 2px solid black; background-color:white; color:black}
 p.centerBlurb {width: 75%; text-align:center; margin: 0 auto;}
+
+/* * SHARED ELEMENTS */
+/* Buttons */
+a.linkButton {display:block; border: 2px solid black; background-color:black; width:200px;
+                font-family: 'Bitcount Single'; font-size: xx-large; text-align: center;
+                color:white; text-decoration: none; margin: 0 auto; margin-top:10px}
+a.linkbutton:hover {border: 2px solid black; background-color:white; color:black}
+
+/* Rows with Pictures and Text */
 div.fullRow {position:relative; height:300px; width:100%; margin-top:10px}
 div.innerRow {position: relative; margin: 0 auto}
 div.picSide {width: 500px; height:300px; display:inline-block; position: absolute;}
@@ -37,30 +58,16 @@ div.desSide {width: 500px; height:300px; display:inline-block; position:absolute
 div.leftDesSide {left: 5%}
 div.rightDesSide {right: 5%}
 div.textBox {position: absolute; height:300px; width:500px; display:inline-block;}
-div.footer {display: inline-block; position:relative; width: 100%; border:2px solid #000000; margin-top:2%}
-div.footerLink {display: inline-block; font-family: 'Bitcount Single'; font-size: medium; text-align: right;}
-.hamburger-icon {display:none; height:auto}
-.hamburger-icon span {height: 2px; width:30px; background-color: black; display:block; margin-bottom: 5px}
-div.mobilePic {display:none}
-div.mobileText {display:none}
-@media (max-width: 1150px) {
-    div.desSide {width:400px}
-    div.picSide {width:400px}
-    div.textBox {width:400px}
-    div.leftPicBox {left: 1%}
-    div.rightPicBox {right: 1%}
-    div.leftDesBox {left: 1%}
-    div.rightDesBox {right: 1%}
-    div.picBox>img {width:450px; height:275px;}
-}
 
+/* * RESPONSIVE */
 @media (max-width: 1000px) {
-    .mobileMenu {display:block; position:absolute; right: 0px; top:20px;}
-    /* * Make the header bigger */
+    /* Make the header bigger */
     div.header {min-height: 50px}
     div.bandlogo {font-size:40px}
     div.header ul.navbar {display:none}
     div.fullRow {display: none}
+    /* Show the mobile menu */
+    .mobileMenu {display:block; position:absolute; right: 0px; top:20px;}
     .hamburger-icon {display:inline-block}
     .mobileMenu:hover .mobileNav {display:block; z-index:10}
     .mobileNav {position:absolute; top:10px;}
@@ -68,10 +75,10 @@ div.mobileText {display:none}
     .mobileNav ul {padding: 15px 0;}
     .mobileNav ul li {display:block; margin:0; padding: 0 0 0 10px;}
     .mobileNav ul li a {display:block;}
-    /* * Adjust the text */
+    /* Adjust the text */
     h1 {font-size:x-large}
     h2 {font-size:large}
-    /* * For the text boxes in index and services */
+    /* For the text boxes in index and services */
     div.mobilePic {display:inline-block; width:100%}
     div.mobileText {display:inline-block; width:100%;}
     div.footer {margin-top: 5%}
